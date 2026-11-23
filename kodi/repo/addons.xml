@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.concertplaylists" name="Concert Playlists" version="0.1.0" provider-name="Amir">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.script" library="player.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Plays playlists of single tracks taken from different concerts</summary>
+    <description lang="en_GB">Plays playlist files made by the Concert Playlists editor. Each entry is a track (a time range) of an MKV file, a DVD folder (played as a stack of its VOB files) or a Blu-ray folder (played from its main playlist file). Every error is written to a log file and shown on screen.</description>
+  </extension>
+</addon>
+<addon id="repository.amirhome61.concerts" name="Concert Playlists Repository" version="1.0.0" provider-name="amirhome61">
+  <extension point="xbmc.addon.repository" name="Concert Playlists Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/amirhome61/musica/main/kodi/repo/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/amirhome61/musica/main/kodi/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/amirhome61/musica/main/kodi/repo/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Updates for the Concert Playlists add-on</summary>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
